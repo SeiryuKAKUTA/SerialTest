@@ -1,6 +1,6 @@
 #define WAIT_TIME           (500) // [ms]
 
-int i = 0;
+int i = 1;
 void setup() 
 {
 	Serial.begin(115200);
@@ -8,7 +8,7 @@ void setup()
 
 void loop() 
  {
-  if(i<100)
+  if(i<=100)
   {
     Serial.print(i,DEC); // output string (and line feed)
     	if(i% 15 == 0) {
